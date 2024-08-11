@@ -29,6 +29,28 @@ function updatePrice(inputField, textField, price) {
 }
 
 
+// Update Total Price 
+function updateTotalPrice() {
+    const phonePriceString = document.getElementById('phone-price').innerText;
+    const casePriceString = document.getElementById('case-price').innerText;
+
+    const phonePrice = parseInt(phonePriceString);
+    console.log(phonePrice);
+    
+    const casePrice = parseInt(casePriceString);
+    
+    let total = phonePrice + casePrice;
+    let tax = total * 0.1;
+    const finalPrice = total + tax;
+
+    tax = tax.toFixed(2);
+
+    document.getElementById('sub-total').innerText = total;
+    document.getElementById('tax').innerText = tax;
+    document.getElementById('final-price').innerText = finalPrice;
+}
+
+
 
 
 
