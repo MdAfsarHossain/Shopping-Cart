@@ -51,6 +51,20 @@ function updateTotalPrice() {
 }
 
 
+// Phone Amount Calculations
+document.getElementById('phone-plus-btn').addEventListener('click', function () {
+    updateQuantity('phone-input-field', true);
+    updatePrice('phone-input-field', 'phone-price', 1219);
+    updateTotalPrice();
+})
+
+document.getElementById('phone-minus-btn').addEventListener('click', function () {
+    updateQuantity('phone-input-field', false);
+    updatePrice('phone-input-field', 'phone-price', 1219);
+    updateTotalPrice();
+})
+
+
 
 
 
