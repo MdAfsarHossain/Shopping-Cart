@@ -85,6 +85,12 @@ document.getElementById('remove-phone-item').addEventListener('click', function 
 })
 
 
+// Remove Case Item
+document.getElementById('remove-case-item').addEventListener('click', function () {
+    this.parentNode.parentNode.parentNode.remove(this);
+})
+
+
 
 
 
