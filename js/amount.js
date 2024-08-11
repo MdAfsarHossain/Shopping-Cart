@@ -79,6 +79,11 @@ document.getElementById('case-minus-btn').addEventListener('click', function () 
 })
 
 
+// Remove Phone Item
+document.getElementById('remove-phone-item').addEventListener('click', function () {
+    this.parentNode.parentNode.parentNode.remove(this);
+})
+
 
 
 
