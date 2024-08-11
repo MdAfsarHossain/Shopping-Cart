@@ -65,6 +65,20 @@ document.getElementById('phone-minus-btn').addEventListener('click', function ()
 })
 
 
+// Case Amount Calculations
+document.getElementById('case-plus-btn').addEventListener('click', function () {
+    updateQuantity('case-input-field', true);
+    updatePrice('case-input-field', 'case-price', 59);
+    updateTotalPrice();
+})
+
+document.getElementById('case-minus-btn').addEventListener('click', function () {
+    updateQuantity('case-input-field', false);
+    updatePrice('case-input-field', 'case-price', 59);
+    updateTotalPrice();
+})
+
+
 
 
 
