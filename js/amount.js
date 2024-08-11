@@ -18,6 +18,18 @@ function updateQuantity(inputField, isIncrease) {
 }
 
 
+// Update Price
+function updatePrice(inputField, textField, price) {
+    const priceString = document.getElementById(textField);
+    const quantityString = document.getElementById(inputField).value;
+    let quantity = parseInt(quantityString);
+    quantity = quantity * price;
+
+    priceString.innerText = quantity;
+}
+
+
+
 
 
 
